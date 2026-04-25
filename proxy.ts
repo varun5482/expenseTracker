@@ -2,7 +2,7 @@ import { NextResponse, type NextRequest } from 'next/server';
 
 import { updateSession } from '@/lib/supabase/proxy';
 
-const PUBLIC_PATH_PREFIXES = ['/auth', '/_next', '/favicon.ico', '/icon-192.png', '/icon-512.png', '/sw.js'];
+const PUBLIC_PATH_PREFIXES = ['/auth', '/_next', '/favicon.ico', '/sw.js'];
 
 export async function proxy(request: NextRequest) {
   const response = await updateSession(request);
