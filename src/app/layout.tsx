@@ -14,7 +14,10 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'Expense PWA',
   description: 'Track expenses, savings, recurring spends, and splits in a mobile-friendly PWA.',
-  manifest: '/manifest.webmanifest'
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: '/icon-192.png'
+  }
 };
 
 export const viewport: Viewport = {
