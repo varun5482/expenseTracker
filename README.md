@@ -56,7 +56,10 @@ Fill in:
 ```env
 NEXT_PUBLIC_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_xxxxxxxxxxxxxxxxx
+SUPABASE_SERVICE_ROLE_KEY=service_role_xxxxxxxxxxxxxxxxx
 ```
+
+> Note: `SUPABASE_SERVICE_ROLE_KEY` is required by the server-side Supabase client used for auth/session handling. Keep it private and do not expose it in the browser.
 
 ### 3. Create database objects in Supabase
 
