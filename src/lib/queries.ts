@@ -18,6 +18,7 @@ import {
 } from '@/lib/utils';
 import { roundCurrencyCents } from '@/lib/format';
 
+export type { ExpenseWithRelations };
 export type GroupByOption = 'date' | 'category' | 'spentWhere';
 
 const defaultCategories = ['Food', 'Travel', 'Bills', 'Shopping', 'Health', 'Subscriptions'];
