@@ -16,7 +16,7 @@ export function IncomeForm({ monthKey, incomeRecord }: Props) {
           <p className="eyebrow">Savings input</p>
           <h2>Monthly income</h2>
         </div>
-        <span className="muted-pill">{incomeRecord ? formatCurrencyFromCents(incomeRecord.incomeCents) : 'Not set'}</span>
+        <span className="muted-pill">{incomeRecord ? formatCurrencyFromCents(incomeRecord.income_cents) : 'Not set'}</span>
       </div>
 
       <form action={upsertMonthlyIncome} className="inline-form">
@@ -24,7 +24,7 @@ export function IncomeForm({ monthKey, incomeRecord }: Props) {
         <label className="grow">
           <span>Income for {monthKey}</span>
           <input
-            defaultValue={incomeRecord ? incomeRecord.incomeCents / 100 : ''}
+            defaultValue={incomeRecord ? incomeRecord.income_cents / 100 : ''}
             min="0"
             name="income"
             placeholder="Enter monthly income"
